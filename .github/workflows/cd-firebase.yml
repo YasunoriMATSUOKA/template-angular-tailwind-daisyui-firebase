@@ -1,14 +1,13 @@
 name: CD Firebase
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [published]
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: ["14", "16"]
+        node: ["14"]
     name: Node ${{ matrix.node }} CD Firebase
     steps:
       - uses: actions/checkout@v2
