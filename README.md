@@ -11,7 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [Angular ESLint](https://github.com/angular-eslint/angular-eslint)
   1. `ng add @angular-eslint/schematics`
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-  1. `npm install --save-dev eslint-config-prettier`
+  1. `npm install --save-dev prettier eslint-config-prettier`
   1. Add `"prettier"` in `.eslintrc.json`
 
 ## Development server
