@@ -8,6 +8,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   1. `npm install -g @angular/cli`
   1. `ng new template-angular-tailwind-daisyui-firebase`
   1. `cd template-angular-tailwind-daisyui-firebase`
+- [Angular ESLint](https://github.com/angular-eslint/angular-eslint)
+  1. `ng add @angular-eslint/schematics`
 
 ## Development server
 
