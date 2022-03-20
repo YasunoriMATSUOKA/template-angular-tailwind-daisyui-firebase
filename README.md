@@ -13,6 +13,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
   1. `npm install --save-dev prettier eslint-config-prettier`
   1. Add `"prettier"` in `.eslintrc.json`
+- Format on Save Settings
+  1. Install ESLint and Prettier as VSCode Extensions
+  1. Create `.vscode/settings.json`
+
+```json:settings.json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
+```
 
 ## Development server
 
