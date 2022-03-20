@@ -32,6 +32,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [daisyUI](https://daisyui.com/docs/install/)
   1. `npm i daisyui`
   1. Edit `tailwind.config.js`
+- CI
+  - Angular
+    - Unit Test
+      - [Karma](https://karma-runner.github.io/latest/index.html) & [Jasmine](https://jasmine.github.io/) ... default
+        - [GitHub Actions](https://angular.jp/guide/testing#configure-project-for-github-actions)
+        - [Edit `karma.config.js`](https://angular.jp/guide/testing#chrome%E3%81%A7%E3%81%AEci%E3%83%86%E3%82%B9%E3%83%88%E7%94%A8%E3%81%ABcli%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B)
 
 ## Development server
 
