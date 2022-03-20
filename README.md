@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
+## Status
+
+[![CI Angular Build](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-build.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-build.yml) [![CI Angular Unit Test](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-unit-test.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-unit-test.yml)
+
 ## Setup
 
 - [Angular](https://angular.io/guide/setup-local)
@@ -34,6 +38,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   1. Edit `tailwind.config.js`
 - CI
   - Angular
+    - Build
     - Unit Test
       - [Karma](https://karma-runner.github.io/latest/index.html) & [Jasmine](https://jasmine.github.io/) ... default
         - [GitHub Actions](https://angular.jp/guide/testing#configure-project-for-github-actions)
