@@ -4,7 +4,25 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Status
 
-[![CI Angular Build](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-build.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-build.yml) [![CI Angular Unit Test](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-unit-test.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-unit-test.yml)
+| environment | CI/CD | type               | type       | status                                                                                                                                                                                                                                                                                                         |
+| ----------- | ----- | ------------------ | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| production  | CI    | Angular            | lint       | [![CI Angular Lint](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-lint.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-lint.yml)                                     |
+| production  | CI    | Angular            | build      | [![CI Angular Build](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-build.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-build.yml)                                  |
+| production  | CI    | Angular            | unit test  | [![CI Angular Unit Test](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-unit-test.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-angular-unit-test.yml)                      |
+| production  | CI    | Angular            | e2e test   | Not Implemented                                                                                                                                                                                                                                                                                                |
+| production  | CI    | Firebase Functions | lint       | [![CI Firebase Functions Lint](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-firebase-functions-lint.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-firebase-functions-lint.yml)    |
+| production  | CI    | Firebase Functions | build      | [![CI Firebase Functions Build](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-firebase-functions-build.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/ci-firebase-functions-build.yml) |
+| production  | CI    | Firebase Functions | unit test  | Not Implemented                                                                                                                                                                                                                                                                                                |
+| production  | CD    | Firebase           | deploy all | [![CD Firebase Deploy](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/cd-firebase.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/cd-firebase.yml)                                          |
+| development | CI    | Angular            | build      | [![dev CI Angular Build](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/dev-ci-angular-build.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/dev-ci-angular-build.yml)                      |
+| development | CD    | Firebase           | deploy all | [![dev CD Firebase](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/dev-cd-firebase.yml/badge.svg)](https://github.com/YasunoriMATSUOKA/template-angular-tailwind-daisyui-firebase/actions/workflows/dev-cd-firebase.yml)                                     |
+
+## Links
+
+| environment | URL                                                                                              |
+| ----------- | ------------------------------------------------------------------------------------------------ |
+| production  | [https://template-angular-firebase.web.app/](https://template-angular-firebase.web.app/)         |
+| development | [https://dev-template-angular-firebase.web.app/](https://dev-template-angular-firebase.web.app/) |
 
 ## Setup
 
@@ -38,11 +56,32 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   1. Edit `tailwind.config.js`
 - CI
   - Angular
+    - Lint
     - Build
     - Unit Test
       - [Karma](https://karma-runner.github.io/latest/index.html) & [Jasmine](https://jasmine.github.io/) ... default
         - [GitHub Actions](https://angular.jp/guide/testing#configure-project-for-github-actions)
         - [Edit `karma.config.js`](https://angular.jp/guide/testing#chrome%E3%81%A7%E3%81%AEci%E3%83%86%E3%82%B9%E3%83%88%E7%94%A8%E3%81%ABcli%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B)
+    - E2E Test ... Not implementd
+  - Firebase
+    - Functions
+      - Lint
+      - Build
+      - Unit Test ... Not implemented
+- CD
+  - Firebase
+    - production
+    - development
+- [Firebase](https://firebase.google.com/)
+  1. Create Firebase Projects ... ex. prod: `template-angular-firebase`, dev: `dev-template-angular-firebase`
+  1. `npm install firebase`
+  1. Set Firebase config in Angular environments
+  1. Install CLI tools with `npm i -D firebase-tools` ... `-D` is important!
+  1. Execute `npx firebase init` and Initialize default project
+  1. Execute `npx firebase use --add` interactively and Set necessary project's alias
+  1. Execute `npx firebase init --project=projedt-name` to initialize projects are not default project
+  1. Fix functions eslint
+  1. Deploy `npx firebase deploy --project=dev-template-angular-firebase --token=${{ secrets.FIREBASE_TOKEN }}` or `npx firebase deploy --project=dev-template-angular-firebase --token=${{ secrets.FIREBASE_TOKEN }}`
 
 ## Development server
 

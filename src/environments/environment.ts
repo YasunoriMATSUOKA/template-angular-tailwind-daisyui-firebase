@@ -4,6 +4,16 @@
 
 export const environment = {
   production: false,
+  useEmulator: false,
+  firebase: {
+    apiKey: 'AIzaSyCkv66E5TGFSM8TTnCVxEYqzgDeEcnRW5s',
+    authDomain: 'dev-template-angular-firebase.firebaseapp.com',
+    projectId: 'dev-template-angular-firebase',
+    storageBucket: 'dev-template-angular-firebase.appspot.com',
+    messagingSenderId: '374880024084',
+    appId: '1:374880024084:web:f94a56915e69e0b78d1901',
+    measurementId: 'G-C3YF7CPVQM',
+  },
 };
 
 /*
