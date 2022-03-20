@@ -24,6 +24,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 }
 ```
 
+- [Tailwind CSS](https://tailwindcss.com/docs/guides/angular)
+  1. `npm install -D tailwindcss postcss autoprefixer`
+  1. `npx tailwindcss init`
+  1. Edit `tailwind.config.js`
+  1. Edit `src/styles.css`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
