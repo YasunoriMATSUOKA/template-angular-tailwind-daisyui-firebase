@@ -29,6 +29,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   1. `npx tailwindcss init`
   1. Edit `tailwind.config.js`
   1. Edit `src/styles.css`
+- [daisyUI](https://daisyui.com/docs/install/)
+  1. `npm i daisyui`
+  1. Edit `tailwind.config.js`
 
 ## Development server
 
